@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ray Rosario, Code Slinger, Web Builder, Cool dude',
+    title: 'Raymond Rosario',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }
