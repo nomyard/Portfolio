@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
         <h1>
           {siteTitle}
           </h1>
-        <h3 style={{ padding: '.1rem 7rem'}}> Web Builder | Lifelong Learner </h3>
+        <h3 style={{borderBottom: 'solid 1px black', paddingBottom: '2rem', paddingLeft: '7rem'}}> Web Builder | Lifelong Learner </h3>
           
         </Link>
         
