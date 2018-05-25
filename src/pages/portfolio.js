@@ -10,9 +10,9 @@ const Portfolio = () => (
       <div style={{ height: '300'}} />
     </Parallax>
     <h3 style={{textDecoration: 'none', marginRight: '2rem', paddingBottom: '.5rem', borderBottom: '1px solid black'}}><em>Portfolio</em></h3>        
-    <h5><Link style={{textDecoration: 'none'}} to="/contactform/"><em>Contact Me</em></Link></h5>
+    <h5><Link style={{textDecoration: 'none', color: '#333333'}} to="/contactform/"><em>Contact Me</em></Link></h5>
     
-    <h5><Link style={{textDecoration: 'none', marginRight: '2rem'}} to="/"><em>Home</em></Link></h5>
+    <h5><Link style={{textDecoration: 'none', color: '#333333', marginRight: '2rem'}} to="/"><em>Home</em></Link></h5>
 
     <h1 style={{marginTop: '2rem'}}>Hi from the second page</h1>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
