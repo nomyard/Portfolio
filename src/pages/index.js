@@ -6,9 +6,14 @@ import philly from '../resources/images/philly.jpg'
 
 const IndexPage = () => (
   <div>
-    <Parallax strength={500} style={{marginBottom: '2rem', width: 'auto', borderRadius: '12px'}} bgImage={philly}>
+    <Parallax strength={500} style={{marginBottom: '3rem', width: 'auto', borderRadius: '12px'}} bgImageAlt="Photo by u/acnthxyl on Reddit" bgImage={philly}>
       <div style={{ height: '300px'}} />
     </Parallax>
+    <h3 style={{textDecoration: 'none', marginRight: '2rem', paddingBottom: '.5rem', borderBottom: '1px solid black'}}><em>Home</em></h3>        
+    <h5><Link style={{textDecoration: 'none', marginRight: '2rem'}} to="/portfolio/"><em>Portfolio</em></Link></h5>
+    <h5><Link style={{textDecoration: 'none'}} to="/contactform/"><em>Contact Me</em></Link></h5>
+    
+    <h1 style={{marginTop: '2rem'}}> HELLO! </h1>
     <p style={{borderLeft: 'solid 1px black', padding: '2rem'}}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
       lacinia lacus. Ut mollis dictum hendrerit. Mauris blandit massa et velit
@@ -34,38 +39,9 @@ const IndexPage = () => (
       lacinia eros eget orci lacinia, non eleifend libero rutrum. Sed laoreet,
       lorem eget porta elementum, enim purus dapibus dolor, vel rhoncus risus ex
       ut ipsum. Mauris at ultricies dolor. Pellentesque tempor leo eget cursus
-      egestas. Donec ultrices tellus et massa vehicula, non varius est
-      facilisis. Praesent finibus nisi quis mi tempus commodo. Integer viverra
-      laoreet consequat. Donec molestie at ligula nec fringilla. Integer
-      volutpat sapien nec arcu consequat, vel finibus erat vulputate. Vivamus
-      tincidunt massa at felis imperdiet, id ornare nunc rutrum. Phasellus
-      sodales arcu a felis sodales facilisis. Phasellus quis augue hendrerit,
-      lacinia eros eu, vestibulum mi. Duis finibus leo ac porttitor aliquet.
-      Integer sollicitudin eget enim non luctus. Duis quis nisl diam. Cras non
-      gravida lorem, vitae aliquam dolor. Proin vestibulum nibh nec nisi
-      pharetra, sed fringilla tellus semper. Etiam dapibus aliquam nibh, sed
-      pulvinar justo posuere sed. Maecenas dictum scelerisque fringilla.
-      Suspendisse ornare faucibus arcu ac mattis. Donec vulputate est nec
-      euismod laoreet. Praesent volutpat erat eu massa eleifend rutrum. Lorem
-      ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis purus
-      nulla, sit amet iaculis sem ultrices in. Cras convallis diam eu magna
-      rutrum dapibus. Suspendisse et velit massa. Etiam scelerisque porta
-      bibendum. Aliquam porttitor ligula ipsum, ac volutpat justo scelerisque
-      vel. Etiam suscipit lacus quis massa porttitor feugiat. Pellentesque quis
-      neque fringilla, ultricies dolor nec, hendrerit tellus. Nunc sit amet sem
-      euismod, sagittis metus nec, lacinia ex. Pellentesque id condimentum
-      metus, quis vehicula lacus. Interdum et malesuada fames ac ante ipsum
-      primis in faucibus. Nunc auctor augue accumsan metus iaculis viverra.
-      Proin mi dui, sagittis non dapibus eu, hendrerit eget orci. Nullam
-      vulputate tempor nunc ac vehicula. Duis laoreet orci non vehicula congue.
-      Phasellus tempor posuere urna, sed tincidunt augue scelerisque id. Sed
-      auctor massa quam. Donec at sapien metus. Pellentesque vel pulvinar velit.
-      Etiam porttitor mi eu risus fringilla auctor. Proin pharetra diam sit amet
-      erat vulputate, vitae tempor ligula condimentum. Pellentesque at rhoncus
-      diam. Quisque porta libero sem, sed elementum risus tincidunt et.
     </p>
 
-    <Link to="/page-2/">Go to page 2</Link>
+    
   </div>
 )
 
