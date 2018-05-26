@@ -89,7 +89,7 @@ const ContactForm = () => (
     </a>
 
     <div style={{ marginTop: '2rem' }}>
-      <form name="contact" method="POST" action="/success" netlify>
+      <form name="contact" method="POST" action="/success" data-netlify="true" netlify>
         <p>
           <label>
             <input style={{display: 'flex', width: '20rem'}} type="text" name="name" placeholder="Name"/>
