@@ -61,7 +61,7 @@ const ContactForm = () => (
       </Link>
     </h5>
 
-    <h1 style={{ marginTop: '2rem' }}>Fill this out to contact me</h1>
+    <h1 style={{ marginTop: '2rem' }}>Contact Me!</h1>
 
     <a
       target="blank"
@@ -89,19 +89,19 @@ const ContactForm = () => (
     </a>
 
     <div style={{ marginTop: '2rem' }}>
-      <form name="contact" method="POST" netlify>
+      <form name="contact" method="POST" action="/success" netlify>
         <p>
           <label>
-            <input type="text" name="name" placeholder="Name"/>
+            <input style={{display: 'flex', width: '20rem'}} type="text" name="name" placeholder="Name"/>
           </label>
         </p>
         <p>
           <label>
-            <input style={{ display: 'flex', width: '50rem'}} type="email" name="email" placeholder="Email"/>
+            <input style={{ display: 'flex', width: '20rem'}} type="email" name="email" placeholder="Email"/>
           </label>
         </p>
         <p>
-            <textarea style={{height: '200px', width: '500px'}} name="message" placeholder="Write me a message" />
+            <textarea style={{height: '200px', display: 'flex', width: '20rem'}} name="message" placeholder="Write me a message" />
         </p>
         <p>
           <button
