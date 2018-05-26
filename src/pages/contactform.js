@@ -89,7 +89,7 @@ const ContactForm = () => (
     </a>
 
     <div style={{ marginTop: '2rem' }}>
-      <form name="contact" netlify-honeypot="bot-field" action="/success.js" netlify>
+      <form name="contact" netlify-honeypot="bot-field" action="/success" netlify>
         <p style={{display: "none"}}>
           <label> Don't fill this out: <input name="bot-field" /></label>
         </p>
