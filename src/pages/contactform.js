@@ -64,6 +64,7 @@ const ContactForm = () => (
     <h1 style={{ marginTop: '2rem' }}>Fill this out to contact me</h1>
 
     <a
+      target="blank"
       href="https://github.com/nomyard"
       style={{ textDecoration: 'none', color: '#333333' }}
     >
@@ -71,6 +72,7 @@ const ContactForm = () => (
       <FaGithubSquare size={36} />{' '}
     </a>
     <a
+      target="blank"
       href="https://www.linkedin.com/in/raymondrosario91/"
       style={{ textDecoration: 'none', color: '#333333' }}
     >
@@ -78,6 +80,7 @@ const ContactForm = () => (
       <FaLinkedinSquare style={{ marginLeft: '1rem' }} size={36} />
     </a>
     <a
+      target="blank"
       href="https://twitter.com/n0myard"
       style={{ textDecoration: 'none', color: '#333333' }}
     >
