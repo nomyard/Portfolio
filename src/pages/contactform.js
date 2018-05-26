@@ -91,19 +91,17 @@ const ContactForm = () => (
     <div style={{ marginTop: '2rem' }}>
       <form name="contact" method="POST" netlify>
         <p>
-          <h3>
-            Name: <input type="text" name="name" />
-          </h3>
+          <label>
+            <input type="text" name="name" placeholder="Name"/>
+          </label>
         </p>
         <p>
-          <h3>
-            Email: <input type="email" name="email" />
-          </h3>
+          <label>
+            <input style={{ display: 'flex', width: '50rem'}} type="email" name="email" placeholder="Email"/>
+          </label>
         </p>
         <p>
-          <h3>
-            Message: <textarea name="message" />
-          </h3>
+            <textarea style={{height: '200px', width: '500px'}} name="message" placeholder="Write me a message" />
         </p>
         <p>
           <button

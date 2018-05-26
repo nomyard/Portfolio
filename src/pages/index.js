@@ -59,11 +59,6 @@ const IndexPage = () => (
         <em>Contact Me</em>
       </Link>
     </h5>
-    <h5>
-      <Link style={{ textDecoration: 'none', color: '#333333' }} to="/success/">
-        <em>Success</em>
-      </Link>
-    </h5>
 
     <h1 style={{ marginTop: '2rem' }}> About Me</h1>
     <p style={{ borderLeft: 'solid 1px #2626f7', padding: '2rem' }}>
