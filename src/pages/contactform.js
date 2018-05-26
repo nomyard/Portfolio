@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Parallax } from 'react-parallax';
-import FaGithub from 'react-icons/lib/fa/github';
+import FaGithubSquare from 'react-icons/lib/fa/github-square';
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
+import FaTwitterSquare from 'react-icons/lib/fa/twitter-square'
 
 import singapore from '../resources/images/singapore2.jpg';
 
@@ -17,9 +18,10 @@ const ContactForm = () => (
     <h5><Link style={{textDecoration: 'none', marginRight: '2rem', color: '#333333'}} to="/portfolio/"><em>Portfolio</em></Link></h5>
     
     <h1 style={{marginTop: '2rem'}}>Fill this out to contact me</h1>
-    
-    <FaGithub size={36} />
+
+    <a href="https://github.com/nomyard" style={{ textDecoration: 'none', color: '#333333' }}> <FaGithubSquare size={36} /> </a>
     <a href="https://www.linkedin.com/in/raymondrosario91/" style={{textDecoration:'none', color: '#333333'}}> <FaLinkedinSquare style={{marginLeft:'1rem'}} size={36} /></a>
+    <a href="https://twitter.com/n0myard" style={{textDecoration: 'none', color: '#333333'}}> <FaTwitterSquare style={{marginLeft: '1rem'}} size={36}/> </a>
 
     <p style={{marginTop: '2rem'}} > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
       lacinia lacus. Ut mollis dictum hendrerit. Mauris blandit massa et velit
