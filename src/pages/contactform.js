@@ -89,16 +89,16 @@ const ContactForm = () => (
     </a>
 
     <div style={{ marginTop: '2rem' }}>
-      <form name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="contact" method="post" action="/success">
         <p>
-          <label>
+
             <input style={{display: 'flex', width: '20rem'}} type="text" name="name" placeholder="Name"/>
-          </label>
+
         </p>
         <p>
-          <label>
+
             <input style={{ display: 'flex', width: '20rem'}} type="email" name="email" placeholder="Email"/>
-          </label>
+
         </p>
         <p>
             <textarea style={{height: '200px', display: 'flex', width: '20rem'}} name="message" placeholder="Write me a message" />
@@ -118,7 +118,7 @@ const ContactForm = () => (
             }}
             type="submit"
           >
-            Submit
+            Send
           </button>
         </p>
       </form>
