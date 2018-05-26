@@ -13,7 +13,7 @@ const IndexPage = () => (
     <h5><Link style={{textDecoration: 'none', color:'#333333', marginRight: '2rem'}} to="/portfolio/"><em>Portfolio</em></Link></h5>
     <h5><Link style={{textDecoration: 'none', color: '#333333'}} to="/contactform/"><em>Contact Me</em></Link></h5>
     
-    <h1 style={{marginTop: '2rem'}}> HELLO! </h1>
+    <h1 style={{marginTop: '2rem'}}> Small Change!!!!!!! </h1>
     <p style={{borderLeft: 'solid 1px black', padding: '2rem'}}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
       lacinia lacus. Ut mollis dictum hendrerit. Mauris blandit massa et velit
