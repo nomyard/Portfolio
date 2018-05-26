@@ -89,7 +89,10 @@ const ContactForm = () => (
     </a>
 
     <div style={{ marginTop: '2rem' }}>
-      <form name="contact" method="post" action="/success">
+      <form name="contact" netlify-honeypot="bot-field" action="/success.js" netlify>
+        <p style={{display: "none"}}>
+          <label> Don't fill this out: <input name="bot-field" /></label>
+        </p>
         <p>
 
             <input style={{display: 'flex', width: '20rem'}} type="text" name="name" placeholder="Name"/>
