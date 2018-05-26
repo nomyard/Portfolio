@@ -6,10 +6,12 @@
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
-    "react-parallax": "^1.7.0"
+    "react-parallax": "^1.7.0",
+    "react-responsive": "^4.1.0"
   },
   "keywords": [
     "gatsby"

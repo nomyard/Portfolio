@@ -1,21 +1,70 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Parallax } from 'react-parallax';
+import { Parallax } from 'react-parallax'
+import MediaQuery from 'react-responsive'
 
-import mountain from '../resources/images/mountain2.jpg';
+import mountain from '../resources/images/mountain2.jpg'
 
 const Portfolio = () => (
   <div>
-  <Parallax strength={500} style={{marginBottom: '3rem', width: 'auto', borderRadius: '12px'}} bgImageAlt="Photo by Philippe Toupet on Unsplash" bgImage={mountain}>
-      <div style={{ height: '300'}} />
-    </Parallax>
-    <h3 style={{textDecoration: 'none', marginRight: '2rem', paddingBottom: '.5rem', borderBottom: '1px solid black'}}><em>Portfolio</em></h3>        
-    <h5><Link style={{textDecoration: 'none', color: '#333333'}} to="/contactform/"><em>Contact Me</em></Link></h5>
-    
-    <h5><Link style={{textDecoration: 'none', color: '#333333', marginRight: '2rem'}} to="/"><em>Home</em></Link></h5>
+    <MediaQuery minDeviceWidth={768}>
+      <Parallax
+        strength={500}
+        style={{
+          marginBottom: '3rem',
+          width: 'auto',
+          borderRadius: '12px',
+          height: 'auto',
+        }}
+        bgImageAlt="Photo by Phillipe Touppet on Unsplash"
+        bgImage={mountain}
+      >
+        <div style={{ height: '300px' }} />
+      </Parallax>
+    </MediaQuery>
+    <MediaQuery query="(max-device-width: 480px)">
+      <img
+        src={mountain}
+        style={{ borderRadius: '12px', objectFit: 'contain' }}
+      />
+    </MediaQuery>
 
-    <h1 style={{marginTop: '2rem'}}>Hi from the second page</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
+    <h3
+      style={{
+        textDecoration: 'none',
+        marginRight: '2rem',
+        paddingBottom: '.5rem',
+        borderBottom: '1px solid #2626f7',
+      }}
+    >
+      <em>Portfolio</em>
+    </h3>
+    <h5>
+      <Link
+        style={{ textDecoration: 'none', color: '#333333' }}
+        to="/contactform/"
+      >
+        <em>Contact Me</em>
+      </Link>
+    </h5>
+
+    <h5>
+      <Link
+        style={{
+          textDecoration: 'none',
+          color: '#333333',
+          marginRight: '2rem',
+        }}
+        to="/"
+      >
+        <em>Home</em>
+      </Link>
+    </h5>
+
+    <h1 style={{ marginTop: '2rem' }}>Completed Work</h1>
+    <p>
+      {' '}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
       lacinia lacus. Ut mollis dictum hendrerit. Mauris blandit massa et velit
       hendrerit, at accumsan leo dapibus. Suspendisse blandit mi vel dui
       vehicula accumsan. Nam sagittis quis mi ac scelerisque. Nam condimentum
@@ -38,7 +87,8 @@ const Portfolio = () => (
       pharetra. Vestibulum eu fringilla libero, nec egestas felis. Praesent
       lacinia eros eget orci lacinia, non eleifend libero rutrum. Sed laoreet,
       lorem eget porta elementum, enim purus dapibus dolor, vel rhoncus risus ex
-      ut ipsum. Mauris at ultricies dolor. Pellentesque tempor leo eget cursus</p>
+      ut ipsum. Mauris at ultricies dolor. Pellentesque tempor leo eget cursus
+    </p>
   </div>
 )
 

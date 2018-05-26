@@ -15,20 +15,25 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-    <Link
-      to="/"
-      style={{
-        color: 'black',
-        textDecoration: 'none',
-      }}
+      <Link
+        to="/"
+        style={{
+          color: '#333333',
+          textDecoration: 'none',
+        }}
+      >
+        <h1>{siteTitle}</h1>
+        <h3
+          style={{
+            borderBottom: 'solid 1px #2626f7',
+            paddingBottom: '1.5rem',
+            paddingLeft: '7rem',
+          }}
         >
-        <h1>
-          {siteTitle}
-          </h1>
-        <h3 style={{borderBottom: 'solid 1px black', paddingBottom: '2rem', paddingLeft: '7rem'}}> Full Stack Developer | Ardent Learner | Aspiring Cyborg </h3>
-          
-        </Link>
-        
+          {' '}
+          Full Stack Developer | Ardent Learner | Aspiring Cyborg{' '}
+        </h3>
+      </Link>
     </div>
   </div>
 )
