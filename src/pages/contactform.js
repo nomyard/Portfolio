@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link, navigateTo } from 'gatsby-link'
 import { Parallax } from 'react-parallax'
 import FaGithubSquare from 'react-icons/lib/fa/github-square'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
