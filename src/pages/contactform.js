@@ -8,7 +8,39 @@ import MediaQuery from 'react-responsive'
 
 import singapore from '../resources/images/singapore2.jpg'
 
-const ContactForm = () => (
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+export default class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
+
+render() {
+  return(
   <div>
     <MediaQuery minDeviceWidth={768}>
       <Parallax
@@ -89,22 +121,22 @@ const ContactForm = () => (
     </a>
 
     <div style={{ marginTop: '2rem' }}>
-      <form name="contact" method="post" action="/success" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="contact" method="post" action="/success/" data-netlify="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
         <p style={{display: "none"}}>
-          <label> Don't fill this out: <input name="bot-field" /></label>
+          <label> Don't fill this out: <input name="bot-field" onChange={this.handleChange}/></label>
         </p>
         <p>
 
-            <input style={{display: 'flex', width: '20rem'}} type="text" name="name" placeholder="Name"/>
+            <input style={{display: 'flex', width: '20rem'}} type="text" name="name" onChange={this.handleChange} placeholder="Name"/>
 
         </p>
         <p>
 
-            <input style={{ display: 'flex', width: '20rem'}} type="email" name="email" placeholder="Email"/>
+            <input style={{ display: 'flex', width: '20rem'}} type="email" name="email" onChange={this.handleChange} placeholder="Email"/>
 
         </p>
         <p>
-            <textarea style={{height: '200px', display: 'flex', width: '20rem'}} name="message" placeholder="Write me a message" />
+            <textarea style={{height: '200px', display: 'flex', width: '20rem'}} name="message" onChange={this.handleChange} placeholder="Write me a message" />
         </p>
         <p>
           <button
@@ -127,6 +159,6 @@ const ContactForm = () => (
       </form>
     </div>
   </div>
-)
-
-export default ContactForm
+  )
+  }
+}
