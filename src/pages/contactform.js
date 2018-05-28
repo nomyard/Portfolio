@@ -121,7 +121,7 @@ class ContactForm extends React.Component {
           <FaTwitterSquare style={{ marginLeft: '1rem' }} size={36} />{' '}
         </a>
 
-        <div style={{marginTop: '2rem' }}>
+        <div style={{ marginTop: '2rem' }}>
           <form
             name="contact"
             method="post"
@@ -138,8 +138,19 @@ class ContactForm extends React.Component {
               </label>
             </p>
             <p>
+              <h4 style={{ marginBottom: '.5rem' }}> Name: </h4>
               <input
-                style={{ display: 'flex', width: '25rem' }}
+                style={{
+                  display: 'flex',
+                  width: '25rem',
+                  border: '1px solid #333',
+                  borderRadius: '5px',
+                  fontFamily: 'sans-serif',
+                  paddingTop: '.5rem',
+                  paddingBottom: '.5rem',
+                  paddingLeft: '.3rem',
+                  fontSize: '18px'
+                }}
                 type="text"
                 name="name"
                 onChange={this.handleChange}
@@ -147,8 +158,19 @@ class ContactForm extends React.Component {
               />
             </p>
             <p>
+              <h4 style={{ marginBottom: '.5rem' }}> Email: </h4>
               <input
-                style={{ display: 'flex', width: '25rem' }}
+                style={{
+                  display: 'flex',
+                  width: '25rem',
+                  border: '1px solid #333',
+                  borderRadius: '5px',
+                  fontFamily: 'sans-serif',
+                  paddingTop: '.5rem',
+                  paddingBottom: '.5rem',
+                  fontSize: '18px',
+                  paddingLeft: '.3rem'
+                }}
                 type="email"
                 name="email"
                 onChange={this.handleChange}
@@ -156,11 +178,22 @@ class ContactForm extends React.Component {
               />
             </p>
             <p>
+              <h4 style={{ marginBottom: '.5rem' }}> Message: </h4>
               <textarea
-                style={{ height: '200px', display: 'flex', width: '25rem' }}
+                style={{
+                  height: '200px',
+                  display: 'flex',
+                  width: '25rem',
+                  border: '1px solid #333',
+                  borderRadius: '5px',
+                  fontFamily: 'sans-serif',
+                  paddingTop: '.5rem',
+                  paddingLeft: '.3rem',
+                  fontSize: '18px'
+                }}
                 name="message"
                 onChange={this.handleChange}
-                placeholder="Write me a message"
+                placeholder="Message"
               />
             </p>
             <p>
@@ -168,14 +201,14 @@ class ContactForm extends React.Component {
                 style={{
                   backgroundColor: '#2626f7',
                   color: 'white',
-                  border: '1px solid #2626f7',
-                  borderRadius: '8px',
-                  textShadow: '1px 1px 2px black',
-                  padding: '.5rem 3rem .5rem 3rem',
+                  border: 'none',
+                  borderRadius: '5px',
+                  padding: '.5rem 2rem .5rem 2rem',
                   fontFamily: 'sans-serif',
-                  fontSize: '1.5rem',
-                  boxShadow: '1px 1px 2px black',
+                  fontSize: '1.3rem',
+                  fontWeight: '500',
                   cursor: 'pointer',
+                  marginLeft: '17.8rem',
                 }}
                 type="submit"
               >

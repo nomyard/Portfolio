@@ -61,6 +61,8 @@ const IndexPage = () => (
     </h5>
 
     <h1 style={{ marginTop: '2rem' }}> About Me</h1>
+
+      
     <h4
       style={{
         borderLeft: 'solid 1px #2626f7',
@@ -68,7 +70,7 @@ const IndexPage = () => (
         lineHeight: '2rem',
       }}
     >
-      I'm an Air Force veteran, book-worm, and enthusiastic creator. When I'm
+      I'm an Air Force veteran, book-worm, and lifelong creator. When I'm
       not programming I'm either reading, writing, or making music. I'm self-driven, and I have an unquenchable thirst for knowledge.
     </h4>
 
