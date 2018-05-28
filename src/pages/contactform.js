@@ -121,7 +121,7 @@ class ContactForm extends React.Component {
           <FaTwitterSquare style={{ marginLeft: '1rem' }} size={36} />{' '}
         </a>
 
-        <div style={{ marginTop: '2rem' }}>
+        <div style={{marginTop: '2rem' }}>
           <form
             name="contact"
             method="post"
@@ -139,7 +139,7 @@ class ContactForm extends React.Component {
             </p>
             <p>
               <input
-                style={{ display: 'flex', width: '20rem' }}
+                style={{ display: 'flex', width: '25rem' }}
                 type="text"
                 name="name"
                 onChange={this.handleChange}
@@ -148,7 +148,7 @@ class ContactForm extends React.Component {
             </p>
             <p>
               <input
-                style={{ display: 'flex', width: '20rem' }}
+                style={{ display: 'flex', width: '25rem' }}
                 type="email"
                 name="email"
                 onChange={this.handleChange}
@@ -157,7 +157,7 @@ class ContactForm extends React.Component {
             </p>
             <p>
               <textarea
-                style={{ height: '200px', display: 'flex', width: '20rem' }}
+                style={{ height: '200px', display: 'flex', width: '25rem' }}
                 name="message"
                 onChange={this.handleChange}
                 placeholder="Write me a message"
@@ -169,6 +169,7 @@ class ContactForm extends React.Component {
                   backgroundColor: '#2626f7',
                   color: 'white',
                   border: '1px solid #2626f7',
+                  borderRadius: '8px',
                   textShadow: '1px 1px 2px black',
                   padding: '.5rem 3rem .5rem 3rem',
                   fontFamily: 'sans-serif',

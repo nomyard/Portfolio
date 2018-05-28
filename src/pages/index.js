@@ -61,32 +61,34 @@ const IndexPage = () => (
     </h5>
 
     <h1 style={{ marginTop: '2rem' }}> About Me</h1>
-    <p style={{ borderLeft: 'solid 1px #2626f7', padding: '2rem' }}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare
-      lacinia lacus. Ut mollis dictum hendrerit. Mauris blandit massa et velit
-      hendrerit, at accumsan leo dapibus. Suspendisse blandit mi vel dui
-      vehicula accumsan. Nam sagittis quis mi ac scelerisque. Nam condimentum
-      elit in tellus suscipit, ullamcorper laoreet ante sollicitudin. Etiam
-      interdum justo risus, eu molestie metus commodo eget. Vestibulum sit amet
-      est hendrerit, porta libero a, cursus eros. Pellentesque pretium nulla sit
-      amet congue consectetur. Duis euismod urna orci, ut rhoncus augue posuere
-      at. Mauris vulputate egestas velit, in rutrum nibh. Sed ornare felis eu
-      turpis pulvinar pulvinar. Maecenas auctor eros ac ante malesuada, et
-      ornare dui scelerisque. Integer suscipit pellentesque ipsum non gravida.
-      Nunc convallis odio et malesuada iaculis. Vestibulum eget gravida nulla,
-      non maximus mauris. Maecenas pulvinar ipsum id libero bibendum tincidunt.
-      Etiam condimentum sem eget velit eleifend sollicitudin. Integer turpis
-      leo, pharetra a euismod sollicitudin, lobortis non massa. Proin blandit
-      rhoncus ante. Donec varius pharetra dictum. Etiam dignissim dictum lacus,
-      eu gravida nibh cursus non. Nam sed nisi venenatis, maximus felis sed,
-      vulputate arcu. Duis suscipit tempus orci sed vehicula. Duis ante justo,
-      condimentum at accumsan interdum, cursus fermentum sem. Aenean varius at
-      lorem eget efficitur. Pellentesque rhoncus nibh ut nibh facilisis
-      pharetra. Vestibulum eu fringilla libero, nec egestas felis. Praesent
-      lacinia eros eget orci lacinia, non eleifend libero rutrum. Sed laoreet,
-      lorem eget porta elementum, enim purus dapibus dolor, vel rhoncus risus ex
-      ut ipsum. Mauris at ultricies dolor. Pellentesque tempor leo eget cursus
-    </p>
+    <h4
+      style={{
+        borderLeft: 'solid 1px #2626f7',
+        padding: '2rem',
+        lineHeight: '2rem',
+      }}
+    >
+      I'm an Air Force veteran, book-worm, and enthusiastic creator. When I'm
+      not programming I'm either reading, writing, or making music. I'm self
+      driven and have an unquenchable thirst for knowledge.
+    </h4>
+
+    <h2> My Skills Include:</h2>
+    <div style={{ display: 'inline-block' }}>
+      <h4 style={{ display: 'block' }}> JavaScript</h4>
+      <h4 style={{ display: 'block' }}> HTML5 </h4>
+      <h4 style={{ display: 'block' }}> CSS3 </h4>
+      </div>
+      <div style={{ display: 'inline-block' }}>
+        <h4 style={{ display: 'block', marginLeft: '5rem' }}> ReactJS </h4>
+        <h4 style={{ display: 'block', marginLeft: '5rem' }}> VueJS </h4>
+        <h4 style={{ display: 'block', marginLeft: '5rem' }}> Redux </h4>
+      </div>
+    <div style={{ display: 'inline-block' }}>
+      <h4 style={{ display: 'block', marginLeft: '5rem' }}> NodeJS </h4>
+      <h4 style={{ display: 'block', marginLeft: '5rem' }}> MongoDB </h4>
+      <h4 style={{ display: 'block', marginLeft: '5rem' }}> ExpressJS </h4>
+    </div>
   </div>
 )
 
