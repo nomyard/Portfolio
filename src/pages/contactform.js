@@ -206,7 +206,6 @@ class ContactForm extends React.Component {
                   padding: '.5rem 2rem .5rem 2rem',
                   fontFamily: 'sans-serif',
                   fontSize: '1.3rem',
-                  fontWeight: '500',
                   cursor: 'pointer',
                   marginLeft: '17.8rem',
                 }}
