@@ -199,15 +199,16 @@ class ContactForm extends React.Component {
             <p>
               <button
                 style={{
-                  backgroundColor: '#2626f7',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '5px',
-                  padding: '.5rem 2rem .5rem 2rem',
+                  backgroundColor: 'transparent',
+                  color: '#2626F7',
+                  border: '1.5px solid #2626F7',
+                  boxShadow: '1px 1px 2px #2626F7',
+                  borderRadius: '3px',
+                  padding: '.5rem 2.5rem .5rem 2.5rem',
                   fontFamily: 'sans-serif',
                   fontSize: '1.3rem',
                   cursor: 'pointer',
-                  marginLeft: '17.8rem',
+                  marginLeft: '17rem',
                 }}
                 type="submit"
               >
