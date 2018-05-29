@@ -71,12 +71,13 @@ class ContactForm extends React.Component {
             marginRight: '2rem',
             paddingBottom: '.5rem',
             borderBottom: '1px solid #2626f7',
+            color: 'black'
           }}
         >
           <em>Contact</em>
         </h3>
         <h5 style={{ textDecoration: 'none' }}>
-          <Link style={{ textDecoration: 'none', color: '#333333' }} to="/">
+          <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
             <em>Home</em>
           </Link>
         </h5>
@@ -86,7 +87,7 @@ class ContactForm extends React.Component {
             style={{
               textDecoration: 'none',
               marginRight: '2rem',
-              color: '#333333',
+              color: 'black',
             }}
             to="/portfolio/"
           >
@@ -94,12 +95,12 @@ class ContactForm extends React.Component {
           </Link>
         </h5>
 
-        <h1 style={{ marginTop: '2rem' }}>Contact Me!</h1>
+        <h1 style={{ marginTop: '2rem', color: 'black' }}>Contact Me!</h1>
 
         <a
           target="blank"
           href="https://github.com/nomyard"
-          style={{ textDecoration: 'none', color: '#333333' }}
+          style={{ textDecoration: 'none', color: 'black' }}
         >
           {' '}
           <FaGithubSquare size={36} />{' '}
@@ -107,7 +108,7 @@ class ContactForm extends React.Component {
         <a
           target="blank"
           href="https://www.linkedin.com/in/raymondrosario91/"
-          style={{ textDecoration: 'none', color: '#333333' }}
+          style={{ textDecoration: 'none', color: 'black' }}
         >
           {' '}
           <FaLinkedinSquare style={{ marginLeft: '1rem' }} size={36} />
@@ -115,7 +116,7 @@ class ContactForm extends React.Component {
         <a
           target="blank"
           href="https://twitter.com/n0myard"
-          style={{ textDecoration: 'none', color: '#333333' }}
+          style={{ textDecoration: 'none', color: 'black' }}
         >
           {' '}
           <FaTwitterSquare style={{ marginLeft: '1rem' }} size={36} />{' '}
@@ -138,7 +139,7 @@ class ContactForm extends React.Component {
               </label>
             </p>
             <p>
-              <h4 style={{ marginBottom: '.5rem' }}> Name: </h4>
+              <h4 style={{ marginBottom: '.5rem', color: 'black' }}> Name: </h4>
               <input
                 style={{
                   display: 'flex',
@@ -149,7 +150,7 @@ class ContactForm extends React.Component {
                   paddingTop: '.5rem',
                   paddingBottom: '.5rem',
                   paddingLeft: '.3rem',
-                  fontSize: '18px'
+                  fontSize: '18px',
                 }}
                 type="text"
                 name="name"
@@ -158,7 +159,7 @@ class ContactForm extends React.Component {
               />
             </p>
             <p>
-              <h4 style={{ marginBottom: '.5rem' }}> Email: </h4>
+              <h4 style={{ marginBottom: '.5rem', color: 'black' }}> Email: </h4>
               <input
                 style={{
                   display: 'flex',
@@ -178,7 +179,7 @@ class ContactForm extends React.Component {
               />
             </p>
             <p>
-              <h4 style={{ marginBottom: '.5rem' }}> Message: </h4>
+              <h4 style={{ marginBottom: '.5rem', color: 'black' }}> Message: </h4>
               <textarea
                 style={{
                   height: '200px',

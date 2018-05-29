@@ -35,6 +35,7 @@ const IndexPage = () => (
         marginRight: '2rem',
         paddingBottom: '.5rem',
         borderBottom: '1px solid #2626f7',
+        color: 'black'
       }}
     >
       <em>Home</em>
@@ -43,7 +44,7 @@ const IndexPage = () => (
       <Link
         style={{
           textDecoration: 'none',
-          color: '#333333',
+          color: 'black',
           marginRight: '2rem',
         }}
         to="/portfolio/"
@@ -53,14 +54,14 @@ const IndexPage = () => (
     </h5>
     <h5>
       <Link
-        style={{ textDecoration: 'none', color: '#333333' }}
+        style={{ textDecoration: 'none', color: 'black'}}
         to="/contactform/"
       >
         <em>Contact Me</em>
       </Link>
     </h5>
 
-    <h1 style={{ marginTop: '2rem' }}> About Me</h1>
+    <h1 style={{ marginTop: '2rem', color: 'black' }}> About Me</h1>
 
       
     <h4
@@ -68,24 +69,25 @@ const IndexPage = () => (
         borderLeft: 'solid 1px #2626f7',
         padding: '2rem',
         lineHeight: '2rem',
+        color: 'black'
       }}
     >
       I'm an Air Force veteran, book-worm, and lifelong creator. When I'm
       not programming I'm either reading, writing, or making music. I'm self-driven, and I have an unquenchable thirst for knowledge.
     </h4>
 
-    <h2> My Skills Include:</h2>
-    <div style={{ display: 'inline-block' }}>
+    <h2 style={{color: 'black'}}> My Skills Include:</h2>
+    <div style={{ display: 'inline-block', color: 'black' }}>
       <h4 style={{ display: 'block' }}> JavaScript</h4>
       <h4 style={{ display: 'block' }}> HTML5 </h4>
       <h4 style={{ display: 'block' }}> CSS3 </h4>
       </div>
-      <div style={{ display: 'inline-block' }}>
+      <div style={{ display: 'inline-block', color: 'black' }}>
         <h4 style={{ display: 'block', marginLeft: '5rem' }}> ReactJS </h4>
         <h4 style={{ display: 'block', marginLeft: '5rem' }}> VueJS </h4>
         <h4 style={{ display: 'block', marginLeft: '5rem' }}> Redux </h4>
       </div>
-    <div style={{ display: 'inline-block' }}>
+    <div style={{ display: 'inline-block', color: 'black' }}>
       <h4 style={{ display: 'block', marginLeft: '5rem' }}> NodeJS </h4>
       <h4 style={{ display: 'block', marginLeft: '5rem' }}> MongoDB </h4>
       <h4 style={{ display: 'block', marginLeft: '5rem' }}> ExpressJS </h4>

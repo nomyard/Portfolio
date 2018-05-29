@@ -18,14 +18,14 @@ const Header = ({ siteTitle }) => (
       <Link
         to="/"
         style={{
-          color: '#333333',
+          color: 'black',
           textDecoration: 'none',
         }}
       >
         <h1>{siteTitle}</h1>
         <h3
           style={{
-            borderBottom: 'solid 1px #333333',
+            borderBottom: 'solid 1px #2626f7',
             paddingBottom: '1.5rem',
             paddingLeft: '7rem',
           }}
