@@ -98,7 +98,7 @@ const NavigationNotifier = styled.h3`
 const Bio = styled.p`
   border-left: solid 1px #2626f7;
   padding: 2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   color: black;
   font-family: sans-serif;
   font-weight: 550;
