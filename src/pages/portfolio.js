@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Parallax } from 'react-parallax'
 import MediaQuery from 'react-responsive'
+import styled from 'styled-components'
 
 import mountain from '../resources/images/mountain2.jpg'
 
@@ -29,17 +30,9 @@ const Portfolio = () => (
       />
     </MediaQuery>
 
-    <h3
-      style={{
-        textDecoration: 'none',
-        marginRight: '2rem',
-        paddingBottom: '.5rem',
-        borderBottom: '1px solid #2626f7',
-        color: 'black'
-      }}
-    >
+    <NavigationNotifier>
       <em>Portfolio</em>
-    </h3>
+    </NavigationNotifier>
     <h5>
       <Link
         style={{ textDecoration: 'none', color: 'black' }}
@@ -54,7 +47,7 @@ const Portfolio = () => (
         style={{
           textDecoration: 'none',
           marginRight: '2rem',
-          color: 'black'
+          color: 'black',
         }}
         to="/"
       >
@@ -62,11 +55,30 @@ const Portfolio = () => (
       </Link>
     </h5>
 
-    <h1 style={{ marginTop: '2rem', color: 'black' }}>Completed Work</h1>
-    <h4 style={{color: 'black', textAlign: 'center'}}>
-      Will Be Updated Soon!!! Stay tuned!
-    </h4>
+    <PageTitle>Completed Work</PageTitle>
+    <PageContent>
+      Various Works are in progress and are receiving their finishing touches.
+      This page will be updated soon!
+    </PageContent>
   </div>
 )
+
+const NavigationNotifier = styled.h3`
+  text-decoration: none;
+  margin-right: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2626f7;
+  color: black;
+`
+
+const PageContent = styled.h4`
+  color: black;
+  text-align: center;
+`
+
+const PageTitle = styled.h1`
+  margin-top: 2rem;
+  color: black;
+`
 
 export default Portfolio
