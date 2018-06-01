@@ -73,7 +73,7 @@ const IndexPage = () => (
       }}
     >
       I'm an Air Force veteran, book-worm, and lifelong creator. When I'm
-      not programming I'm either reading, writing, or making music. I'm self-driven, and I have an unquenchable thirst for knowledge.
+      not programming I'm either reading, writing, or making music. I'm self-driven, and I have an unquenchable thirst for knowledge. Contact me to find out more!
     </h4>
 
     <h2 style={{color: 'black'}}> My Skills Include:</h2>
