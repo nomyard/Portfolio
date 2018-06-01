@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const Success = () => (
   <div>
-    <PrettyMichaelDwight src={officeGif} />
+    <MichaelDwight src={officeGif} />
     <SuccessMessage > Success! </SuccessMessage>
     <SuccessMessage > I'll get back to you as soon as possible! </SuccessMessage>
     
   </div>
 )
 
-const PrettyMichaelDwight = styled.img`
+const MichaelDwight = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;

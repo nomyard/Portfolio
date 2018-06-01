@@ -95,11 +95,13 @@ const NavigationNotifier = styled.h3`
   color: black;
 `
 
-const Bio = styled.h4`
+const Bio = styled.p`
   border-left: solid 1px #2626f7;
   padding: 2rem;
   line-height: 2rem;
   color: black;
+  font-family: sans-serif;
+  font-weight: 550;
 `
 const SubBio = styled.p`
   padding: 2%;
