@@ -60,9 +60,9 @@ const IndexPage = () => (
     <Bio>
       I'm an Air Force veteran, book-worm, and lifelong creator. When I'm not
       programming I'm either reading, writing, or making music. I'm self-driven,
-      and I have an unquenchable thirst for knowledge. Contact me to find out
-      more!
+      and I have an unquenchable thirst for knowledge. Contact me to find out more!
     </Bio>
+
 
     <SkillsHeader> My Skills Include:</SkillsHeader>
     <SkillsColumn>
@@ -80,6 +80,10 @@ const IndexPage = () => (
       <MiddleRightColumn> MongoDB </MiddleRightColumn>
       <MiddleRightColumn> ExpressJS </MiddleRightColumn>
     </SkillsColumn>
+
+    <SubBio>
+      I built this site using GatsbyJS, ReactJS, and Styled-Components. 
+    </SubBio>
   </div>
 )
 
@@ -96,6 +100,18 @@ const Bio = styled.h4`
   padding: 2rem;
   line-height: 2rem;
   color: black;
+`
+const SubBio = styled.p`
+  padding: 2%;
+  line-height: 1rem;
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 15px;
+  border-bottom: solid 1px #2626f7;
+  border-top: solid 1px #2626f7;
+  margin-top: 5%;
+  
 `
 
 const PageTitle = styled.h1`

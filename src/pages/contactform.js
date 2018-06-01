@@ -189,7 +189,7 @@ const SocialMedia = styled.a`
 `
 const PrettyInput = styled.input`
   display: flex;
-  width: 25rem;
+  width: 50%;
   border: 1px solid #333;
   border-radius: 5px;
   font-family: sans-serif;
@@ -201,7 +201,7 @@ const PrettyInput = styled.input`
 const PrettyTextArea = styled.textarea`
   height: 200px;
   display: flex;
-  width: 25rem;
+  width: 50%;
   border: 1px solid #333;
   border-radius: 5px;
   font-family: sans-serif;
@@ -215,11 +215,11 @@ const PrettyButton = styled.button`
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  padding: 1% 4% 1% 4%;
   font-family: sans-serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   cursor: pointer;
-  margin-left: 17rem;
+  margin-left: 37%;
 `
 
 export default ContactForm
