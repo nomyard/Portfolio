@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Parallax, Background } from 'react-parallax'
 import MediaQuery from 'react-responsive'
+import styled from 'styled-components'
 
 import philly from '../resources/images/philly.jpg'
 
@@ -29,17 +30,10 @@ const IndexPage = () => (
       />
     </MediaQuery>
 
-    <h3
-      style={{
-        textDecoration: 'none',
-        marginRight: '2rem',
-        paddingBottom: '.5rem',
-        borderBottom: '1px solid #2626f7',
-        color: 'black'
-      }}
-    >
+    <NavigationNotifier>
       <em>Home</em>
-    </h3>
+    </NavigationNotifier>
+
     <h5>
       <Link
         style={{
@@ -54,45 +48,75 @@ const IndexPage = () => (
     </h5>
     <h5>
       <Link
-        style={{ textDecoration: 'none', color: 'black'}}
+        style={{ textDecoration: 'none', color: 'black' }}
         to="/contactform/"
       >
         <em>Contact Me</em>
       </Link>
     </h5>
 
-    <h1 style={{ marginTop: '2rem', color: 'black' }}> About Me</h1>
+    <PageTitle> About Me</PageTitle>
 
-      
-    <h4
-      style={{
-        borderLeft: 'solid 1px #2626f7',
-        padding: '2rem',
-        lineHeight: '2rem',
-        color: 'black'
-      }}
-    >
-      I'm an Air Force veteran, book-worm, and lifelong creator. When I'm
-      not programming I'm either reading, writing, or making music. I'm self-driven, and I have an unquenchable thirst for knowledge. Contact me to find out more!
-    </h4>
+    <Bio>
+      I'm an Air Force veteran, book-worm, and lifelong creator. When I'm not
+      programming I'm either reading, writing, or making music. I'm self-driven,
+      and I have an unquenchable thirst for knowledge. Contact me to find out
+      more!
+    </Bio>
 
-    <h2 style={{color: 'black'}}> My Skills Include:</h2>
-    <div style={{ display: 'inline-block', color: 'black' }}>
-      <h4 style={{ display: 'block' }}> JavaScript</h4>
-      <h4 style={{ display: 'block' }}> HTML5 </h4>
-      <h4 style={{ display: 'block' }}> CSS3 </h4>
-      </div>
-      <div style={{ display: 'inline-block', color: 'black' }}>
-        <h4 style={{ display: 'block', marginLeft: '5rem' }}> ReactJS </h4>
-        <h4 style={{ display: 'block', marginLeft: '5rem' }}> VueJS </h4>
-        <h4 style={{ display: 'block', marginLeft: '5rem' }}> Redux </h4>
-      </div>
-    <div style={{ display: 'inline-block', color: 'black' }}>
-      <h4 style={{ display: 'block', marginLeft: '5rem' }}> NodeJS </h4>
-      <h4 style={{ display: 'block', marginLeft: '5rem' }}> MongoDB </h4>
-      <h4 style={{ display: 'block', marginLeft: '5rem' }}> ExpressJS </h4>
-    </div>
+    <SkillsHeader> My Skills Include:</SkillsHeader>
+    <SkillsColumn>
+      <LeftColumn> JavaScript</LeftColumn>
+      <LeftColumn> HTML5 </LeftColumn>
+      <LeftColumn> CSS3 </LeftColumn>
+    </SkillsColumn>
+    <SkillsColumn>
+      <MiddleRightColumn> ReactJS </MiddleRightColumn>
+      <MiddleRightColumn> VueJS </MiddleRightColumn>
+      <MiddleRightColumn> Redux </MiddleRightColumn>
+    </SkillsColumn>
+    <SkillsColumn>
+      <MiddleRightColumn> NodeJS </MiddleRightColumn>
+      <MiddleRightColumn> MongoDB </MiddleRightColumn>
+      <MiddleRightColumn> ExpressJS </MiddleRightColumn>
+    </SkillsColumn>
   </div>
 )
+
+const NavigationNotifier = styled.h3`
+  text-decoration: none;
+  margin-right: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2626f7;
+  color: black;
+`
+
+const Bio = styled.h4`
+  border-left: solid 1px #2626f7;
+  padding: 2rem;
+  line-height: 2rem;
+  color: black;
+`
+
+const PageTitle = styled.h1`
+  margin-top: 2rem;
+  color: black;
+`
+const SkillsHeader = styled.h2`
+  color: black;
+`
+const SkillsColumn = styled.div`
+  display: inline-block;
+  color: black;
+`
+
+const LeftColumn = styled.h4`
+  display: block;
+`
+
+const MiddleRightColumn = styled.h4`
+  display: block;
+  margin-left: 5rem;
+`
 
 export default IndexPage
