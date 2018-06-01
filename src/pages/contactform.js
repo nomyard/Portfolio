@@ -6,6 +6,7 @@ import FaGithubSquare from 'react-icons/lib/fa/github-square'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
 import FaTwitterSquare from 'react-icons/lib/fa/twitter-square'
 import MediaQuery from 'react-responsive'
+import styled from 'styled-components'
 
 import singapore from '../resources/images/singapore2.jpg'
 
@@ -65,18 +66,11 @@ class ContactForm extends React.Component {
           />
         </MediaQuery>
 
-        <h3
-          style={{
-            textDecoration: 'none',
-            marginRight: '2rem',
-            paddingBottom: '.5rem',
-            borderBottom: '1px solid #2626f7',
-            color: 'black'
-          }}
-        >
+        <NavigationNotifier>
           <em>Contact</em>
-        </h3>
-        <h5 style={{ textDecoration: 'none' }}>
+        </NavigationNotifier>
+
+        <h5>
           <Link style={{ textDecoration: 'none', color: 'black' }} to="/">
             <em>Home</em>
           </Link>
@@ -95,32 +89,23 @@ class ContactForm extends React.Component {
           </Link>
         </h5>
 
-        <h1 style={{ marginTop: '2rem', color: 'black' }}>Contact Me!</h1>
+        <PageTitle>Contact Me!</PageTitle>
 
-        <a
-          target="blank"
-          href="https://github.com/nomyard"
-          style={{ textDecoration: 'none', color: 'black' }}
-        >
+        <SocialMedia target="blank" href="https://github.com/nomyard">
           {' '}
           <FaGithubSquare size={36} />{' '}
-        </a>
-        <a
+        </SocialMedia>
+        <SocialMedia
           target="blank"
           href="https://www.linkedin.com/in/raymondrosario91/"
-          style={{ textDecoration: 'none', color: 'black' }}
         >
           {' '}
           <FaLinkedinSquare style={{ marginLeft: '1rem' }} size={36} />
-        </a>
-        <a
-          target="blank"
-          href="https://twitter.com/n0myard"
-          style={{ textDecoration: 'none', color: 'black' }}
-        >
+        </SocialMedia>
+        <SocialMedia target="blank" href="https://twitter.com/n0myard">
           {' '}
           <FaTwitterSquare style={{ marginLeft: '1rem' }} size={36} />{' '}
-        </a>
+        </SocialMedia>
 
         <div style={{ marginTop: '2rem' }}>
           <form
@@ -140,18 +125,7 @@ class ContactForm extends React.Component {
             </p>
             <p>
               <h4 style={{ marginBottom: '.5rem', color: 'black' }}> Name: </h4>
-              <input
-                style={{
-                  display: 'flex',
-                  width: '25rem',
-                  border: '1px solid #333',
-                  borderRadius: '5px',
-                  fontFamily: 'sans-serif',
-                  paddingTop: '.5rem',
-                  paddingBottom: '.5rem',
-                  paddingLeft: '.3rem',
-                  fontSize: '18px',
-                }}
+              <PrettyInput
                 type="text"
                 name="name"
                 onChange={this.handleChange}
@@ -159,19 +133,11 @@ class ContactForm extends React.Component {
               />
             </p>
             <p>
-              <h4 style={{ marginBottom: '.5rem', color: 'black' }}> Email: </h4>
-              <input
-                style={{
-                  display: 'flex',
-                  width: '25rem',
-                  border: '1px solid #333',
-                  borderRadius: '5px',
-                  fontFamily: 'sans-serif',
-                  paddingTop: '.5rem',
-                  paddingBottom: '.5rem',
-                  fontSize: '18px',
-                  paddingLeft: '.3rem'
-                }}
+              <h4 style={{ marginBottom: '.5rem', color: 'black' }}>
+                {' '}
+                Email:{' '}
+              </h4>
+              <PrettyInput
                 type="email"
                 name="email"
                 onChange={this.handleChange}
@@ -179,41 +145,18 @@ class ContactForm extends React.Component {
               />
             </p>
             <p>
-              <h4 style={{ marginBottom: '.5rem', color: 'black' }}> Message: </h4>
-              <textarea
-                style={{
-                  height: '200px',
-                  display: 'flex',
-                  width: '25rem',
-                  border: '1px solid #333',
-                  borderRadius: '5px',
-                  fontFamily: 'sans-serif',
-                  paddingTop: '.5rem',
-                  paddingLeft: '.3rem',
-                  fontSize: '18px'
-                }}
+              <h4 style={{ marginBottom: '.5rem', color: 'black' }}>
+                {' '}
+                Message:{' '}
+              </h4>
+              <PrettyTextArea
                 name="message"
                 onChange={this.handleChange}
                 placeholder="Message"
               />
             </p>
             <p>
-              <button
-                style={{
-                  backgroundColor: '#2626F7',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '5px',
-                  padding: '.5rem 2.5rem .5rem 2.5rem',
-                  fontFamily: 'sans-serif',
-                  fontSize: '1.3rem',
-                  cursor: 'pointer',
-                  marginLeft: '17rem',
-                }}
-                type="submit"
-              >
-                Send
-              </button>
+              <PrettyButton type="submit">Send</PrettyButton>
             </p>
           </form>
         </div>
@@ -221,5 +164,62 @@ class ContactForm extends React.Component {
     )
   }
 }
+
+const NavigationNotifier = styled.h3`
+  text-decoration: none;
+  margin-right: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2626f7;
+  color: black;
+`
+
+const PageContent = styled.h4`
+  color: black;
+  text-align: center;
+`
+
+const PageTitle = styled.h1`
+  margin-top: 2rem;
+  color: black;
+`
+
+const SocialMedia = styled.a`
+  text-decoration: none;
+  color: black;
+`
+const PrettyInput = styled.input`
+  display: flex;
+  width: 25rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-family: sans-serif;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+  padding-left: 0.3rem;
+`
+const PrettyTextArea = styled.textarea`
+  height: 200px;
+  display: flex;
+  width: 25rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-family: sans-serif;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  font-size: 18px;
+`
+
+const PrettyButton = styled.button`
+  background-color: #2626f7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 17rem;
+`
 
 export default ContactForm
