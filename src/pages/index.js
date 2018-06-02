@@ -134,7 +134,7 @@ const LeftColumn = styled.h4`
 
 const MiddleRightColumn = styled.h4`
   display: block;
-  margin-left: 5rem;
+  margin-left: 2rem ;
 `
 
 export default IndexPage
