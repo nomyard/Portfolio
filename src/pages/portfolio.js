@@ -57,7 +57,7 @@ const Portfolio = () => (
 
     <PageTitle>Completed Work</PageTitle>
     <PageContent>
-      Various Works in progress - they are receiving their finishing touches.
+      Various works in progress - they are receiving their finishing touches.
     </PageContent>
     <PageContent>
       This page will be updated soon!
